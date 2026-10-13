@@ -1,25 +1,254 @@
+
 <!DOCTYPE html>
 <html lang="ja">
-
 <head>
-    <meta charset="UTF-8">
-    <title>My OC Site</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>FF Fanwork Archive</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      color: #ffffff;
+      font-family: "Courier New", monospace;
+      background:
+        radial-gradient(ellipse at 50% 0%, #263b68 0%, #10182d 48%, #050914 100%);
+      padding: 32px 16px;
+    }
+
+    .site {
+      width: 100%;
+      max-width: 760px;
+      margin: 0 auto;
+    }
+
+    .header {
+      text-align: center;
+      margin-bottom: 26px;
+      text-shadow: 0 0 10px #8dbdff;
+    }
+
+    .header h1 {
+      font-size: clamp(22px, 5vw, 34px);
+      letter-spacing: 3px;
+      margin-bottom: 10px;
+    }
+
+    .subtitle {
+      color: #b8d8ff;
+      font-size: 12px;
+      letter-spacing: 2px;
+    }
+
+    .window {
+      padding: 5px;
+      margin-bottom: 20px;
+      border: 2px solid #d5e7ff;
+      border-radius: 9px;
+      background: linear-gradient(
+        135deg,
+        #b5d9ff 0%,
+        #547fcb 12%,
+        #244b9b 38%,
+        #10275e 70%,
+        #07143e 100%
+      );
+      box-shadow:
+        0 0 0 2px #233f7d,
+        0 0 18px #182f65;
+    }
+
+    .window-inner {
+      padding: 22px;
+      min-height: 100px;
+      border: 1px solid #8bbaff;
+      border-radius: 5px;
+      background: linear-gradient(
+        180deg,
+        rgba(65, 111, 190, 0.72) 0%,
+        rgba(25, 57, 124, 0.94) 45%,
+        rgba(7, 20, 62, 0.98) 100%
+      );
+    }
+
+    .window-title {
+      margin: 0 0 16px;
+      padding-bottom: 9px;
+      border-bottom: 1px solid #8bbaff;
+      font-size: 15px;
+      letter-spacing: 2px;
+      color: #e5f1ff;
+    }
+
+    .menu {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .menu li {
+      margin: 5px 0;
+    }
+
+    .menu a {
+      display: block;
+      padding: 9px 8px;
+      color: #ffffff;
+      text-decoration: none;
+      border: 1px solid transparent;
+      transition: background 0.15s ease;
+    }
+
+    .menu a::before {
+      content: "　";
+      white-space: pre;
+    }
+
+    .menu a:hover,
+    .menu a:focus-visible {
+      background: linear-gradient(
+        90deg,
+        rgba(130, 183, 255, 0.3),
+        rgba(35, 78, 151, 0.08)
+      );
+      border-color: #9bc8ff;
+      outline: none;
+    }
+
+    .menu a:hover::before,
+    .menu a:focus-visible::before {
+      content: "▶ ";
+    }
+
+    .description {
+      color: #d4e5ff;
+      font-size: 13px;
+      line-height: 1.9;
+    }
+
+    .footer {
+      margin-top: 28px;
+      text-align: center;
+      color: #8da9d7;
+      font-size: 11px;
+      line-height: 2;
+    }
+
+    .small-label {
+      color: #a9ccff;
+      font-size: 11px;
+      letter-spacing: 1px;
+    }
+
+    @media (max-width: 480px) {
+      .window-inner {
+        padding: 16px;
+      }
+
+      body {
+        padding: 24px 12px;
+      }
+    }
+  </style>
 </head>
 
 <body>
+  <main class="site">
 
-    <h1>My OC Site</h1>
+    <header class="header">
+      <p class="subtitle">A FANWORK ARCHIVE</p>
+      <h1>FINAL FANTASY</h1>
+      <p class="subtitle">CHARACTERS / STORIES / GALLERY</p>
+    </header>
 
-    <p>Welcome to my little corner of the internet.</p>
+    <section class="window">
+      <div class="window-inner">
+        <h2 class="window-title">MAIN MENU</h2>
+        <nav aria-label="Main menu">
+          <ul class="menu">
+            <li><a href="#ff1">FINAL FANTASY I</a></li>
+            <li><a href="#ff3">FINAL FANTASY III</a></li>
+            <li><a href="#gallery">GALLERY</a></li>
+            <li><a href="#about">ABOUT / CREDITS</a></li>
+          </ul>
+        </nav>
+      </div>
+    </section>
 
-    <h2>Characters</h2>
+    <section class="window" id="ff1">
+      <div class="window-inner">
+        <h2 class="window-title">FINAL FANTASY I</h2>
+        <p class="description">
+          Four adventurers. Four crystals.<br>
+          A journey shaped by their own stories.
+        </p>
+        <nav aria-label="Final Fantasy I menu">
+          <ul class="menu">
+            <li><a href="#ff1">PARTY</a></li>
+            <li><a href="#ff1">SUPPORT CHARACTERS</a></li>
+            <li><a href="#ff1">OTHER CHARACTERS</a></li>
+            <li><a href="#ff1">WORLD &amp; LORE</a></li>
+            <li><a href="#ff1">COMICS</a></li>
+            <li><a href="#ff1">GALLERY</a></li>
+          </ul>
+        </nav>
+      </div>
+    </section>
 
-    <p>My original characters and fan characters.</p>
+    <section class="window" id="ff3">
+      <div class="window-inner">
+        <h2 class="window-title">FINAL FANTASY III</h2>
+        <p class="description">
+          Characters, adventures, and personal interpretations.
+        </p>
+        <nav aria-label="Final Fantasy III menu">
+          <ul class="menu">
+            <li><a href="#ff3">PARTY</a></li>
+            <li><a href="#ff3">OTHER CHARACTERS</a></li>
+            <li><a href="#ff3">WORLD &amp; LORE</a></li>
+            <li><a href="#ff3">COMICS</a></li>
+            <li><a href="#ff3">GALLERY</a></li>
+          </ul>
+        </nav>
+      </div>
+    </section>
 
-    <h2>Gallery</h2>
+    <section class="window" id="gallery">
+      <div class="window-inner">
+        <h2 class="window-title">COMMON GALLERY</h2>
+        <nav aria-label="Gallery menu">
+          <ul class="menu">
+            <li><a href="#gallery">ILLUSTRATIONS</a></li>
+            <li><a href="#gallery">HAND-DRAWN ANIMATIONS</a></li>
+            <li><a href="#gallery">CROSSOVER: FF I × FF III</a></li>
+          </ul>
+        </nav>
+        <p class="description">
+          Works from both worlds, gathered in one place.
+        </p>
+      </div>
+    </section>
 
-    <p>Illustrations and comics.</p>
+    <section class="window" id="about">
+      <div class="window-inner">
+        <h2 class="window-title">ABOUT / CREDITS</h2>
+        <p class="description">
+          A personal fanwork archive.<br>
+          Character interpretations, comics, and illustrations.
+        </p>
+      </div>
+    </section>
 
+    <footer class="footer">
+      <p>FINAL FANTASY FANWORK ARCHIVE</p>
+      <p>Unofficial fanwork site. Not affiliated with Square Enix.</p>
+    </footer>
+
+  </main>
 </body>
-
 </html>
