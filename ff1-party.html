@@ -1,0 +1,186 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>FF1 PARTY | FINAL FANTASY</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=DotGothic16&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      padding: 28px 16px;
+      min-height: 100vh;
+      color: #ffffff;
+      font-family: "DotGothic16", monospace;
+      background: radial-gradient(
+        ellipse at 50% 0%,
+        #111c3d 0%,
+        #080e20 48%,
+        #03050c 100%
+      );
+    }
+
+    .site {
+      width: 100%;
+      max-width: 760px;
+      margin: 0 auto;
+    }
+
+    .header {
+      text-align: center;
+      margin-bottom: 26px;
+      text-shadow: 0 0 10px #8dbdff;
+    }
+
+    .header h1 {
+      font-size: clamp(22px, 5vw, 32px);
+      letter-spacing: 3px;
+    }
+
+    .subtitle {
+      color: #b8d8ff;
+      font-size: 12px;
+      letter-spacing: 2px;
+    }
+
+    .window {
+      padding: 5px;
+      margin-bottom: 20px;
+      border: 2px solid #d5e7ff;
+      border-radius: 9px;
+      background: linear-gradient(
+        180deg, #34477e, #1b2d60 30%,
+        #080f2d 100%
+      );
+      box-shadow: 0 0 0 2px #233f7d,
+                  0 0 18px #182f65;
+    }
+
+    .window-inner {
+      padding: 22px;
+      border: 1px solid #8bbaff;
+      border-radius: 5px;
+      background: linear-gradient(
+        180deg, #152653, #0e1b43 45%, #080f2b
+      );
+    }
+
+    .window-title {
+      margin: 0 0 16px;
+      padding-bottom: 9px;
+      border-bottom: 1px solid #8bbaff;
+      font-size: 15px;
+      letter-spacing: 2px;
+      color: #e5f1ff;
+    }
+
+    .description {
+      color: #d4e5ff;
+      font-size: 13px;
+      line-height: 1.9;
+    }
+
+    .character {
+      margin-top: 14px;
+      padding: 16px;
+      border: 1px solid #38558e;
+      background: rgba(3, 8, 25, 0.55);
+    }
+
+    .character h3 {
+      margin: 0 0 10px;
+      color: #e5f1ff;
+      font-size: 17px;
+    }
+
+    .job {
+      color: #a9ccff;
+      font-size: 12px;
+    }
+
+    .placeholder {
+      margin: 12px 0;
+      padding: 24px 10px;
+      text-align: center;
+      border: 1px dashed #5876ad;
+      color: #8da9d7;
+      font-size: 12px;
+    }
+
+    .back {
+      display: inline-block;
+      margin-top: 12px;
+      padding: 10px 12px;
+      color: #ffffff;
+      text-decoration: none;
+      border: 1px solid #8bbaff;
+    }
+
+    .back:hover {
+      background: #233f7d;
+    }
+
+    @media (max-width: 480px) {
+      .window-inner {
+        padding: 15px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <main class="site">
+    <header class="header">
+      <p class="subtitle">FINAL FANTASY I</p>
+      <h1>PARTY MEMBERS</h1>
+      <p class="subtitle">冒険者たち</p>
+    </header>
+
+    <section class="window">
+      <div class="window-inner">
+        <h2 class="window-title">MAIN PARTY</h2>
+        <p class="description">
+          四つのクリスタルに導かれる、4人の冒険者。
+        </p>
+
+        <article class="character">
+          <h3>01　エルド</h3>
+          <p class="job">JOB：戦士 → ナイト</p>
+          <div class="placeholder">立ち絵・画像を置く場所</div>
+          <p class="description">プロフィールは準備中です。</p>
+        </article>
+
+        <article class="character">
+          <h3>02　ヴェント</h3>
+          <p class="job">JOB：シーフ → 忍者</p>
+          <div class="placeholder">立ち絵・画像を置く場所</div>
+          <p class="description">プロフィールは準備中です。</p>
+        </article>
+
+        <article class="character">
+          <h3>03　マイヤ</h3>
+          <p class="job">JOB：白魔術士 → 白魔道士</p>
+          <div class="placeholder">立ち絵・画像を置く場所</div>
+          <p class="description">プロフィールは準備中です。</p>
+        </article>
+
+        <article class="character">
+          <h3>04　ソル</h3>
+          <p class="job">JOB：黒魔術士 → 黒魔道士</p>
+          <div class="placeholder">立ち絵・画像を置く場所</div>
+          <p class="description">プロフィールは準備中です。</p>
+        </article>
+
+        <a class="back" href="index.html">◀ TOP MENU に戻る</a>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
